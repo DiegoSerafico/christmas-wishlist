@@ -38,4 +38,8 @@ MIT[https://opensource.org/licenses/MIT] 2021
 ## Contact Info
 
 ### Research & Planning Log
-#### Friday, 08/13
+#### Friday, 03/12
+* 4:00pm: create basic project structure
+
+#### Sunday, 05/12
+* 10:00am: plan out project features
