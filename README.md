@@ -42,5 +42,6 @@ MIT[https://opensource.org/licenses/MIT] 2021
 * 4:00pm: create basic project structure
 
 #### Sunday, 05/12
-* 10:00am: plan out project features
-*11:00am: research C# integration for backend
+* 9 - 10:00am: plan out project features
+* 10 - 11:00am: research C# integration for backend
+* 11 - 12:00am: research C# integration for backend with React Frontend
