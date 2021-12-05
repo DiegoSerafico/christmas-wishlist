@@ -43,3 +43,4 @@ MIT[https://opensource.org/licenses/MIT] 2021
 
 #### Sunday, 05/12
 * 10:00am: plan out project features
+*11:00am: research C# integration for backend
