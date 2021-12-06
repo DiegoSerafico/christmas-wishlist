@@ -46,3 +46,4 @@ MIT[https://opensource.org/licenses/MIT] 2021
 * 10 - 11:00am: research C# integration for backend
 * 11 - 12:00am: research C# integration for backend with React Frontend
 * 12 - 1:00pm: whiteboarding outline for app structure (paper)
+* 5 - 6:30: research for redux use
