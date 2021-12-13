@@ -50,3 +50,4 @@ MIT[https://opensource.org/licenses/MIT] 2021
 
 #### Sunday, 12/12
 * 1 - 2:30pm: video research on youtube
+* 2:30pm - 4:00pm: continue research and create initial components
