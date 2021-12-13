@@ -1,0 +1,18 @@
+Diego Serafico
+Project Name: Christmas Wishlist
+The purpose of this project is for people to create their Christmas wish list and share it. 
+
+List of minimum features:
+  Displays wish list
+  CRUD items to wish list
+  Authentication
+
+Tools:
+  React
+  C#
+  Firebase
+
+Stretch goals:
+  Ability to make list shareable or private
+  styling with a style library to make a christmas theme
+  scrape and populate info with provided link
