@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function WishDisplay(props) {
   const WishDisplayStyle = {
@@ -26,6 +27,10 @@ function WishDisplay(props) {
       </div>
     </React.Fragment>
   )
+}
+
+WishDisplay.propTypes = {
+  wish: PropTypes.object
 }
 
 export default WishDisplay;
