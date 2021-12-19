@@ -1,8 +1,9 @@
 import React from 'react';
 import NavBar from './NavBar';
 import { Routes, Route } from 'react-router-dom';
-import ReusableForm from './ReusableForm';
+import NewWishForm from './NewWishForm';
 import WishDisplay from './WishDisplay';
+import Home from './Home';
 
 class WishControl extends React.Component {
   constructor(props) {
@@ -16,9 +17,10 @@ class WishControl extends React.Component {
       <React.Fragment>
         <NavBar />
         <Routes>
-          <Route path='/add' element={<ReusableForm />} />
+          <Route path='wishlist' element={<WishDisplay />} />
+          <Route path='/add' element={<NewWishForm />} />
           {/* This route must be last */}
-          <Route exact path='/' element={<WishDisplay />} />
+          <Route exact path='/' element={<Home />} />
         </Routes>
       
       </React.Fragment>

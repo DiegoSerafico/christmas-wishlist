@@ -55,5 +55,8 @@ MIT[https://opensource.org/licenses/MIT] 2021
 
 #### Saturday, 18/12
 * 4pm - 5pm: Create NavBar and Control
-* 5pm - 9pm: Waiting for onedrive to allow me to delete node modules higher in tree causing an error
+* 5pm - 9pm: Waiting for onedrive to allow me to delete node modules higher in tree causing an error. I'm aware it doesn't count for hours.
 * 9pm - 11: Figured out why routes were'nt displaying elements/components
+
+#### Sunday, 19/12
+* 2am - 4am: Update Wish and WishListdisplay component for WishListDisplay 

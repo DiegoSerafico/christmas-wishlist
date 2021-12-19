@@ -6,7 +6,7 @@ function ReusableForm() {
       <form>
         <input
         type='text'
-        name='title'
+        name='name'
         placeholder='Item Title' 
         />
         <br />
