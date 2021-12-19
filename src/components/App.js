@@ -1,13 +1,15 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
+import WishControl from './WishControl';
 
 function App() {
   return (
     <Router>
+      <Header />
       <div className='container'>
-        <Header />
+        <WishControl />
       </div>
     </Router>
   );

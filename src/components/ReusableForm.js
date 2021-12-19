@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 function ReusableForm() {
   return (
@@ -28,7 +27,7 @@ function ReusableForm() {
         <button type='submit'>submit</button>
       </form>
     </React.Fragment>
-  )
+  );
 }
 
 export default ReusableForm
