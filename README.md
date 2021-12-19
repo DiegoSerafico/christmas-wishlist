@@ -60,3 +60,4 @@ MIT[https://opensource.org/licenses/MIT] 2021
 
 #### Sunday, 19/12
 * 2am - 4am: Update Wish and WishListdisplay component for WishListDisplay 
+* 4am - 5am: Add wishlist with functioning links

@@ -15,7 +15,7 @@ function Wish(props) {
       <div style={WishCardStyle}>
         <h2>{props.name}</h2>
         <hr/>
-        <img src={props.image} />
+        <img src={props.image} alt='Product' />
         <a href={props.url}>Sold Here</a>
         <p><strong>Price:</strong> ${props.price}</p>
         <p><strong>Description:</strong> {props.description}</p>
