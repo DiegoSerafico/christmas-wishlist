@@ -52,3 +52,6 @@ MIT[https://opensource.org/licenses/MIT] 2021
 * 1 - 2:30pm: video research on youtube
 * 2:30pm - 4:00pm: continue research and create initial components
 * 9pm - 11pm: Research on web scraping and add proposal txt
+
+#### Saturday, 18/12
+* 4pm - 5pm: Create NavBar and Control
