@@ -34,13 +34,21 @@ class WishControl extends React.Component {
       ]
     }
   }
+
+  handleAddNewWish = (newWish) => {
+    const newWishList = this.state.wishList.concat(newWish);
+    this.setState({
+      wishList: newWishList
+    });
+  }
+
   render() {
     return (
       <React.Fragment>
         <NavBar />
         <Routes>
           <Route path='wishlist' element={<WishList wishList={this.state.wishList} />} />
-          <Route path='/add' element={<NewWishForm />} />
+          <Route path='/add' element={<NewWishForm onAddWish={this.handleAddNewWish} />} />
           {/* This route must be last */}
           <Route exact path='/' element={<Home />} />
         </Routes>
