@@ -13,7 +13,7 @@ function WishList(props) {
           image={wish.image}
           url={wish.url}
           price={wish.price}
-          pintPrice={wish.description}
+          description={wish.description}
           />
         )}
         <Link to='/add' >Add Item</Link>

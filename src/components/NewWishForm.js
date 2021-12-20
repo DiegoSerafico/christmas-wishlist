@@ -5,8 +5,9 @@ import ReusableForm from "./ReusableForm";
 function NewWishForm(props) {
   function handleAddNewWishForm(e) {
     e.preventDefault();
+    console.log(e.target.url.value);
     props.onAddWish({
-      names: e.target.name.value,
+      name: e.target.name.value,
       image: e.target.image.value,
       url: e.target.url.value,
       price: e.target.price.value,

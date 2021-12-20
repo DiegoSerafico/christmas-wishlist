@@ -21,7 +21,7 @@ function ReusableForm(props) {
         <br />
         <input
         type='url'
-        name='link'
+        name='url'
         placeholder='Item URL'
         />
         <br />
