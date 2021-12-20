@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
+import { useNavigate } from 'react-router-dom';
 
 function NewWishForm(props) {
+  let navigate = useNavigate();
   function handleAddNewWishForm(e) {
     e.preventDefault();
-    console.log(e.target.url.value);
     props.onAddWish({
       name: e.target.name.value,
       image: e.target.image.value,
@@ -13,6 +14,7 @@ function NewWishForm(props) {
       price: e.target.price.value,
       description: e.target.description.value
     });
+    navigate('/wishlist');
   }
   return (
     <React.Fragment>
