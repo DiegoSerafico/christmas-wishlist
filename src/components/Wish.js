@@ -26,7 +26,8 @@ function Wish(props) {
 }
 
 Wish.propTypes = {
-  name: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   image: PropTypes.string,
   url: PropTypes.string,
   price: PropTypes.number,

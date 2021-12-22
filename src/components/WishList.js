@@ -7,13 +7,15 @@ function WishList(props) {
   return (
     <React.Fragment>
       <div>
-        {props.wishList.map((wish) => 
+        {Object.values(props.wishList).map((wish) => 
           <Wish
           name={wish.name} 
           image={wish.image}
           url={wish.url}
           price={wish.price}
           description={wish.description}
+          id={wish.id}
+          key={wish.id}
           />
         )}
         <Link to='/add' >Add Item</Link>
@@ -23,7 +25,7 @@ function WishList(props) {
 }
 
 WishList.propTypes = {
-  wishList: PropTypes.array
+  wishList: PropTypes.object
 }
 
 export default WishList

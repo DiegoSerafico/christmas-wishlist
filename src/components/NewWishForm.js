@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 import { useNavigate } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 
 function NewWishForm(props) {
   let navigate = useNavigate();
@@ -12,7 +13,8 @@ function NewWishForm(props) {
       image: e.target.image.value,
       url: e.target.url.value,
       price: e.target.price.value,
-      description: e.target.description.value
+      description: e.target.description.value,
+      id: uuidv4()
     });
     navigate('/wishlist');
   }

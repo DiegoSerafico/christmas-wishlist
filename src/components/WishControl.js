@@ -4,42 +4,33 @@ import { Routes, Route } from 'react-router-dom';
 import NewWishForm from './NewWishForm';
 import WishList from './WishList';
 import Home from './Home';
+import { connect } from 'react-redux';
+import PropTypes from "prop-types";
+import * as actions from './../actions';
 
 class WishControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      wishList: [
-        {
-          name: 'Speaker',
-          image: 'image',
-          url: 'https://google.com',
-          price: 100,
-          description: 'this good'
-        },
-        {
-          name: 'TV',
-          image: 'image',
-          url: 'https://google.com',
-          price: 1000,
-          description: 'this good'
-        },
-        {
-          name: 'Book',
-          image: 'image',
-          url: 'https://google.com',
-          price: 10,
-          description: 'this good'
-        }
-      ]
     }
   }
 
-  handleAddNewWish = (newWish) => {
-    const newWishList = this.state.wishList.concat(newWish);
-    this.setState({
-      wishList: newWishList
-    });
+  handleDeletingItem = (id) => {
+    const { dispatch } = this.props;
+    const action = actions.deleteWishItem(id);
+    dispatch(action);
+  }
+
+  handleEditingItemInWishlist = (itemToEdit) => {
+    const { dispatch } = this.props;
+    const action = actions.updateWishItem(itemToEdit)
+    dispatch(action);
+  }
+
+  handleAddingNewItemToWishlist = (newItem) => {
+    const { dispatch } = this.props;
+    const action = actions.addWishItem(newItem);
+    dispatch(action);
   }
 
   render() {
@@ -47,8 +38,8 @@ class WishControl extends React.Component {
       <React.Fragment>
         <NavBar />
         <Routes>
-          <Route path='wishlist' element={<WishList wishList={this.state.wishList} />} />
-          <Route path='/add' element={<NewWishForm onAddWish={this.handleAddNewWish} />} />
+          <Route path='wishlist' element={<WishList wishList={this.props.wishList} />} />
+          <Route path='/add' element={<NewWishForm onAddWish={this.handleAddingNewItemToWishlist} />} />
           {/* This route must be last */}
           <Route exact path='/' element={<Home />} />
         </Routes>
@@ -57,5 +48,17 @@ class WishControl extends React.Component {
     )
   }
 }
+
+WishControl.propTypes = {
+  wishList: PropTypes.object
+};
+
+const mapStateToProps = state => {
+  return {
+    wishList: state
+  }
+}
+
+WishControl = connect(mapStateToProps)(WishControl);
 
 export default WishControl
