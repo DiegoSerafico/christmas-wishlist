@@ -15,21 +15,9 @@ class WishControl extends React.Component {
     }
   }
 
-  handleDeletingItem = (id) => {
+  toggleDarkMode = () => {
     const { dispatch } = this.props;
-    const action = actions.deleteWishItem(id);
-    dispatch(action);
-  }
-
-  handleEditingItemInWishlist = (itemToEdit) => {
-    const { dispatch } = this.props;
-    const action = actions.updateWishItem(itemToEdit)
-    dispatch(action);
-  }
-
-  handleAddingNewItemToWishlist = (newItem) => {
-    const { dispatch } = this.props;
-    const action = actions.addWishItem(newItem);
+    const action = actions.toggleDarkMode();
     dispatch(action);
   }
 
@@ -38,8 +26,8 @@ class WishControl extends React.Component {
       <React.Fragment>
         <NavBar />
         <Routes>
-          <Route path='wishlist' element={<WishList wishList={this.props.wishList} />} />
-          <Route path='/add' element={<NewWishForm onAddWish={this.handleAddingNewItemToWishlist} />} />
+          <Route path='wishlist' element={<WishList />} />
+          <Route path='/add' element={<NewWishForm />} />
           {/* This route must be last */}
           <Route exact path='/' element={<Home />} />
         </Routes>
@@ -50,12 +38,12 @@ class WishControl extends React.Component {
 }
 
 WishControl.propTypes = {
-  wishList: PropTypes.object
+  settings: PropTypes.object
 };
 
 const mapStateToProps = state => {
   return {
-    wishList: state
+    settings: state
   }
 }
 

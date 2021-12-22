@@ -15,7 +15,7 @@ function ReusableForm(props) {
         <input
         type='text'
         name='image'
-        placeholder='Image' 
+        placeholder='Image URL' 
         />
         <br />
         <br />
