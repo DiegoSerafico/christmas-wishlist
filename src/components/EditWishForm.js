@@ -1,5 +1,5 @@
-import React from 'react'
-import ReusableForm from './ReusableForm'
+import React from 'react';
+import ReusableForm from './ReusableForm';
 import PropTypes from "prop-types";
 import { useNavigate } from 'react-router-dom';
 

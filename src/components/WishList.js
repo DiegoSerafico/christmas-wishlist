@@ -19,7 +19,7 @@ function WishList(props) {
       <React.Fragment>
         <div>
           {Object.entries(wishlist).map(([id, wish]) => 
-            <Wish
+            <Wish darkMode={props.darkMode}
             name={wish.name} 
             image={wish.image}
             url={wish.url}

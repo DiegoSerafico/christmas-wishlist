@@ -12,7 +12,8 @@ function Wish(props) {
     padding: '10px',
     margin: '10px',
     border: '1px grey solid',
-    float: 'left'
+    float: 'left',
+    color: props.darkMode ? 'white' : 'black'
   }
 
   const imageStyle = {
@@ -36,7 +37,7 @@ function Wish(props) {
           X 
         </button>
         <hr/>
-        <img src={props.image} alt='Product' />
+        <img style={imageStyle} src={props.image} alt='Product' />
         <a href={props.url}>Sold Here</a>
         <p><strong>Price:</strong> ${props.price}</p>
         <p><strong>Description:</strong> {props.description}</p>

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './Header';
 import WishControl from './WishControl';
 
 /*
@@ -29,10 +28,7 @@ ui.start('#firebaseui-auth-container', {
 function App() {
   return (
     <Router>
-      <Header />
-      <div className='container'>
-        <WishControl />
-      </div>
+      <WishControl />
     </Router>
   );
 }
